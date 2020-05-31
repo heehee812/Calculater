@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Lab_04 Calculator</title>
+
+		<!-- CSS and javascript -->
+		<link rel="stylesheet" type="text/css" href="Lab_04.css">
+		<script src="Lab_04.js"></script>
+	</head>
+	<body style="background-color:gray;">
+		<div id="calculator">
+			<div>
+				<input type="text" class="display" id="screen" value="0" readonly>
+			</div>
+			<table style="width:100%; table-layout:fixed ";border="0" cellpadding="0">
+				<tr class="row">
+					<td><input type="button" id="C" onclick="clearNum(this.id)" value="C" class="btn btn3" ></td>
+					<td><input type="button" id="(" onclick="jsq(this.id)" value="(" class="btn btn3" ></td>
+					<td><input type="button" id=")" onclick="jsq(this.id)" value=")" class="btn btn3" ></td>
+					<td><input type="button" id="÷" onclick="jsq(this.id)" value="/" class="btn btn2" ></td>
+				</tr>
+				<tr class="row">
+					<td><input type="button" id="7" onclick="jsq(this.id)" value="7" class="btn" ></td>
+					<td><input type="button" id="8" onclick="jsq(this.id)" value="8" class="btn" ></td>
+					<td><input type="button" id="9" onclick="jsq(this.id)" value="9" class="btn" ></td>
+					<td><input type="button" id="×" onclick="jsq(this.id)" value="*" class="btn btn2" ></td> <!--the '×' is not lowercase 'X'-->
+				</tr>
+				<tr class="row">
+					<td><input type="button" id="4" onclick="jsq(this.id)" value="4" class="btn" ></td>
+					<td><input type="button" id="5" onclick="jsq(this.id)" value="5" class="btn" ></td>
+					<td><input type="button" id="6" onclick="jsq(this.id)" value="6" class="btn" ></td>
+					<td><input type="button" id="-" onclick="jsq(this.id)" value="-" class="btn btn2" ></td>
+				</tr>	
+				<tr class="row">
+					<td><input type="button" id="1" onclick="jsq(this.id)" value="1" class="btn" ></td>
+					<td><input type="button" id="2" onclick="jsq(this.id)" value="2" class="btn" ></td>
+					<td><input type="button" id="3" onclick="jsq(this.id)" value="3" class="btn" ></td>
+					<td><input type="button" id="+" onclick="jsq(this.id)" value="+" class="btn btn2" ></td>
+				</tr>
+				<tr class="row">
+					<td colspan=2><input type="button" id="0" onclick=" jsq(this.id)" value="0" class="btn" style="width:100%;border-radius:40px"></td>
+					<td><input type="button" id="." onclick="jsq(this.id)" value="." class="btn" ></td>
+					<td><input type="button" id="=" onclick="eva()" value="=" class="btn btn2" ></td>
+				</tr>
+			</div>
+		</div>
+	</body>
+</html>
